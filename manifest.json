@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "PhotoEtuIntranetValence",
+  "version": "1.0",
+  "description": "Extension pour afficher les photos des étudiants de l'IUT de Valence sur l'intranet (lorsqu'on est étudiant)",
+  "permissions": [],
+  "host_permissions": [
+    "https://intranet.iut-valence.fr/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://intranet.iut-valence.fr/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
